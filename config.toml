@@ -1,9 +1,9 @@
 # default configuration
-baseURL = "http://decandido.dev"
+baseURL = "https://decandido.dev"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross"
-title = "De Candido | Development"
+title = "Development | De Candido"
 
 # css plugins
 [[params.plugins.css]]
