@@ -1,9 +1,9 @@
 # default configuration
-baseURL = "http://decandido.dev"
+baseURL = "http://examplesite.com"
 languageCode = "en-us"
 summaryLength = "10"
-theme = "kross"
-title = "De Candido | Development"
+theme = "kross-hugo"
+title = "Kross | Hugo Portfolio Template"
 
 # css plugins
 [[params.plugins.css]]
@@ -36,10 +36,20 @@ URL = "about"
 name = "About"
 weight = 2
 
-[[menu.hidden]]
+[[menu.main]]
+URL = "blog"
+name = "Blog"
+weight = 3
+
+[[menu.main]]
 URL = "portfolio"
 name = "Portfolio"
 weight = 4
+
+[[menu.main]]
+URL = "contact"
+name = "Contact"
+weight = 5
 
 
 # default parameters
@@ -47,39 +57,43 @@ weight = 4
 home = "Home"
 logo = "images/logo.png"
 # theme color
-theme_color = "#f50057"
+theme_color = "#41228e"
 # contact info
-phone = "+39 335 781 2244"
-email = "hello@decandido.dev"
-address = "South Tyrol, Italy"
+phone = "+880 2544 658 256"
+email = "steve.fruits@email.com"
+address = "125/A, CA Commercial Area, California, USA"
 # meta description
-author = "Gabriele De Candido"
-description = "Web Designer, Web Developer, Software Engineer from Bolzano, South Tyrol (Italy)"
+author = "Johnathan Smith"
+description = "This is meta description"
 # google analitycs
 google_analitycs_id = "Your ID"
 # copyright
-copyright = "Copyright &copy; 2020 - Gabriele De Candido"
+copyright = "Copyrighht &copy; 2020 a theme by [gethugothemes](https://gethugothemes.com)"
 
 
 # contact
 [params.contact]
 enable = true
-form_action = "https://formspree.io/mvoaldpz" # contact form works with : https://formspree.io
+form_action = "#" # contact form works with : https://formspree.io
 
 # preloader
 [params.preloader]
-enable = false
-preloader = "images/preloader.svg" # use png, jpg, svg or gif format
+enable = true
+preloader = "" # use png, jpg, svg or gif format
 
 # social site
 [[params.social]]
-URL = "https://www.linkedin.com/in/de-candido/"
-icon = "ti-linkedin"
+URL = "#"
+icon = "ti-facebook"
 
 [[params.social]]
-URL = "https://www.instagram.com/gab__ph/"
+URL = "#"
 icon = "ti-instagram"
 
 [[params.social]]
-URL = "https://github.com/lelebus/"
-icon = "ti-github"
+URL = "#"
+icon = "ti-dribbble"
+
+[[params.social]]
+URL = "#"
+icon = "ti-twitter-alt"
