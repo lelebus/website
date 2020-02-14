@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="348.3353mm"
+   height="10.805542mm"
+   viewBox="0 0 348.3353 10.805542"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="gocode.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="707.89614"
+     inkscape:cy="-80.25112"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1360"
+     inkscape:window-height="424"
+     inkscape:window-x="5"
+     inkscape:window-y="144"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(213.79131,-118.30659)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-214.69048"
+       y="126.91071"
+       id="text817"><tspan
+         sodipodi:role="line"
+         id="tspan815"
+         x="-214.69048"
+         y="126.91071"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:monospace;-inkscape-font-specification:'monospace Bold';stroke-width:0.26458332"><tspan
+   style="fill:#4edc00;fill-opacity:1"
+   id="tspan819">func</tspan> <tspan
+   style="fill:#2ea0da;fill-opacity:1"
+   id="tspan855">Filter</tspan><tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan829">(</tspan><tspan
+   style="fill:#f54ea2;fill-opacity:1"
+   id="tspan857">in</tspan> <tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan845">&lt;-</tspan><tspan
+   style="fill:#ff9e2b;fill-opacity:1"
+   id="tspan821">chan int</tspan><tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan851">,</tspan> <tspan
+   style="fill:#f54ea2;fill-opacity:1"
+   id="tspan859">out</tspan> <tspan
+   style="fill:#ff9e2b;fill-opacity:1"
+   id="tspan823">chan</tspan><tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan847">&lt;-</tspan> <tspan
+   style="fill:#ff9e2b;fill-opacity:1"
+   id="tspan825">int</tspan><tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan853">,</tspan> <tspan
+   style="fill:#f54ea2;fill-opacity:1"
+   id="tspan861">prime</tspan> <tspan
+   style="fill:#ff9e2b;fill-opacity:1"
+   id="tspan827">int</tspan><tspan
+   style="fill:#00ffff;fill-opacity:1"
+   id="tspan849">) {</tspan></tspan></text>
+  </g>
+</svg>

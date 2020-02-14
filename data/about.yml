@@ -6,12 +6,12 @@ work_process:
   - title : "Plan first"
     icon : "images/icons/plan.png"
     iconAlt: "first plan, then execute. Next-Gen workers"
-    content : "Specify requirements that match real needs. <br> Align steps by order of execution and expected completion time."
+    content : "Specify requirements that match real needs. <br> Align steps in order of execution and expected completion time."
     
   - title : "Design and Develop"
     icon : "images/icons/process.png"
     iconAlt: "Continuous development. Agile. Next-Gen workers"
-    content : "Agree on design and follow the whole development process by continuous reviews on continuous delivery."
+    content : "Agree on design and follow the whole development process with continuous reviews on continuous delivery."
     
   - title : "Deliver"
     icon : "images/icons/deliver.png"
@@ -30,14 +30,6 @@ team:
     - title : "Jack Schenziwe"
       image : "images/team/member-1.png"
       designation : "Project Manager"
-      
-    - title : "Julias Carlie"
-      image : "images/team/member-2.png"
-      designation : "Web Developer"
-      
-    - title : "John Doe"
-      image : "images/team/member-3.png"
-      designation : "Designer"
 
 
 # client logo slider

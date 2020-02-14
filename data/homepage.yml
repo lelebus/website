@@ -5,7 +5,7 @@ banner:
 # about
 about:
   enable : true
-  content : "Before I started working and freelancing in the Software Industrie, I experimented with completely different occupations .&nbsp;.&nbsp;."
+  content : "Before I started working and freelancing in the Software Industry, I experimented with completely different occupations .&nbsp;.&nbsp;."
   button:
     enable : true
     label : "know more"
@@ -20,14 +20,13 @@ skill:
       progress : "60%"
       color : "#2BFF9E"
       
-    - title : "Web Development"
+    - title : "Web Development" 
       progress : "90%"
       color : "#2B8CFF"
 
     - title : "SEO"
       progress : "80%"
       color : "#FF9E2B"	
-      
       
     - title : "Software Engineering"
       progress : "70%"
@@ -40,17 +39,20 @@ experience:
   title : "Experience"
   item: 
     - logo : "images/experience/icon-1.png"
-      title : "Design"
-      description: "Business Cards, Web Design"
+      id: "softwaredev"
+      title : "Software Development"
+      description: "Management Software, <br> Enterprise Resoure Planner (ERP)"
       
     - logo : "images/experience/icon-2.png"
+      id: "design"
+      title : "Design"
+      description: "Business Cards, Web Design"
+
+    - logo : "images/experience/icon-3.png"
+      id: "webdev"
       title : "Web Development"
       description: "Landing Pages, Multilingual Websites, Single Page Applications (SPA), E-Commerce"
       
-    - logo : "images/experience/icon-3.png"
-      title : "Software Development"
-      description: "Management Software, <br> Enterprise Resoure Planner (ERP)"
-
 # education
 education:
   enable : false

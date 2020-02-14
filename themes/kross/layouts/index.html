@@ -36,10 +36,13 @@
     <div class="layer" id="l9">
       <img src="{{`images/illustrations/leaf-cyan-2.svg` | relURL}}" alt="bg-shape">
     </div>
+    <div class="layer" id="gocode">
+      <!-- <img src="{{`images/illustrations/gocode.svg` | relURL}}" alt="golang code snippet"> -->
+    </div>
     <!-- social icon -->
     <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
       {{ range .Site.Params.social }}
-      <li class="mb-3"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
+      <li class="mb-3 social"><a class="text-white" href="{{.URL | safeURL }}"><i class="{{.icon}}"></i></a></li>
       {{ end }}
     </ul>
     <!-- /social icon -->
@@ -107,7 +110,7 @@
         </div>
         {{ range .item }}
         <div class="col-lg-3 col-md-4 text-center">
-          <img src="{{.logo | relURL }}" alt="icon">
+          <img id="{{ .id }}" src="{{.logo | relURL }}" alt="loading icon">
           <h4>{{.title }}</h4>
           <h6 class="text-light">{{ .description | safeHTML }}</h6>
         </div>

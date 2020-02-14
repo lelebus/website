@@ -73,13 +73,13 @@ preloader = "images/preloader.svg" # use png, jpg, svg or gif format
 
 # social site
 [[params.social]]
-URL = "https://www.linkedin.com/in/de-candido/"
-icon = "ti-linkedin"
-
-[[params.social]]
 URL = "https://www.instagram.com/gab__ph/"
 icon = "ti-instagram"
 
 [[params.social]]
 URL = "https://github.com/lelebus/"
 icon = "ti-github"
+
+[[params.social]]
+URL = "https://www.linkedin.com/in/de-candido/"
+icon = "ti-linkedin"
