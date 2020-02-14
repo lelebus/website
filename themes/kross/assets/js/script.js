@@ -49,7 +49,7 @@
          other operations, as below elements are bingding to the parallax.
         */
         if (!parallaxBox) {
-            return ;
+            return;
         }
 
         var
@@ -123,33 +123,33 @@
         dots: false,
         arrows: false,
         responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
             }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
         ]
     });
 
@@ -174,59 +174,68 @@
 
 })(jQuery);
 
-window.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("DOMContentLoaded", function () {
 
     // get the form elements defined in your form HTML above
-    
+
     var form = document.getElementById("form-contact");
     var button = document.getElementById("submit-contact");
     var loader = document.getElementById("loader-contact");
     var status = document.getElementById("status-contact");
 
     // Success and Error functions for after the form is submitted
-    
+
     function success() {
-      form.reset();
-      status.innerHTML = "Thanks!";
+        form.reset();
+        status.classList.toggle('active');
+        loader.classList.toggle('active');
+        status.innerHTML = "Thanks!";
     }
 
     function error() {
-      status.innerHTML = "Oops! Please retry.";
+        status.classList.toggle('active');
+        loader.classList.toggle('active');
+        status.innerHTML = "Oops! Please retry.";
     }
 
     // handle the form submission event
 
-    form.addEventListener("submit", function(ev) {
+    form.addEventListener("submit", function (ev) {
         ev.preventDefault();
         var data = new FormData(form);
         ajax(form.method, form.action, data, success, error, loader, status);
     });
-  });
-  
-  // helper function for sending an AJAX request
 
-  function ajax(method, url, data, success, error, loader, status) {
-    
+    // handle the mobile menu
+    var menuButton = document.getElementById('menu-toggler');
+    menuButton.addEventListener("click", function () {
+        document.getElementById('menu-hamburger').classList.toggle('active');
+        document.getElementById('menu-navigation').classList.toggle('open');
+    });
+});
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error, loader, status) {
+
     status.innerHTML = "";
     status.classList.toggle('active');
     loader.classList.toggle('active');
-    
+
     var xhr = new XMLHttpRequest();
     xhr.open(method, url);
     xhr.setRequestHeader("Accept", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        success(xhr.response, xhr.responseType);
-      } else {
-        error(xhr.status, xhr.response, xhr.responseType);
-      }
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+            success(xhr.response, xhr.responseType);
+        } else {
+            error(xhr.status, xhr.response, xhr.responseType);
+        }
     };
 
 
-    setTimeout(function(){
-        status.classList.toggle('active');
-        loader.classList.toggle('active');
+    setTimeout(function () {
         xhr.send(data);
     }, 700);
-  }
+}

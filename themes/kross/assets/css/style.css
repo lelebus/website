@@ -88,8 +88,6 @@ h6,
   font-size: 14px;
 }
 
-
-
 .btn {
   font-size: 22px;
   text-transform: capitalize;
@@ -425,11 +423,83 @@ textarea.form-control {
 
 .navigation {
   padding: 40px 130px;
-  transition: 0.3s ease;
+}
+
+@media (max-width: 767px) {
+  #menu-navigation {
+    height: 0;
+    width: 100vw;
+    display: block;
+    margin-right: -36px;
+    margin-left: -36px;
+    background: var(--primary-color);
+    font-size: 2.5rem;
+    transition: height .6s ease-in-out;
+    overflow: hidden;
+  }
+  
+  #menu-navigation.open {
+    height: 100vh;
+    /* transition: height 2s ease-in-out; */
+  }
+  
+  #menu-navigation ul {
+    margin-top: 25px;
+  }
 }
 
 nav {
-  height: 100px;
+  height: 90px;
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+}
+
+svg.hamburger {
+  margin-right: -15px;
+  width: 100px;
+  height: 75px;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+svg.hamburger path {
+  fill: none;
+  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
+    stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
+    stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
+    stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
+    stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
+    stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  stroke-width: 40px;
+  stroke-linecap: round;
+  stroke: black;
+  stroke-dashoffset: 0px;
+}
+svg.hamburger path#top,
+svg.hamburger path#bottom {
+  stroke-dasharray: 240px 950px;
+}
+svg.hamburger path#middle {
+  stroke-dasharray: 240px 240px;
+}
+svg.hamburger.active path#top,
+svg.hamburger.active path#bottom {
+  stroke-dashoffset: -650px;
+  stroke-dashoffset: -650px;
+}
+svg.hamburger.active path#middle {
+  stroke-dashoffset: -115px;
+  stroke-dasharray: 1px 220px;
 }
 
 .navigation img {
@@ -961,6 +1031,8 @@ blockquote {
 #status-contact {
   display: inline-block;
   width: 150px;
+  text-align: left;
+  padding-left: 10px;
 }
 
 #status-contact.active {
