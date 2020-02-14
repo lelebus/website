@@ -1,5 +1,5 @@
 # default configuration
-baseURL = "https://decandidodev.netlify.com/"
+baseURL = "https://decandido.dev/"
 languageCode = "en-us"
 summaryLength = "10"
 theme = "kross"
