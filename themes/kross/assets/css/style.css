@@ -504,6 +504,7 @@ svg.hamburger.active path#middle {
 
 .navigation img {
   height: 65px;
+  transition: height .2s ease-in-out;
 }
 
 .navigation img:hover {
@@ -987,15 +988,15 @@ blockquote {
 }
 
 #softwaredev {
-  animation: spin 2.5s linear infinite;
+  animation: spin 25s linear infinite;
 }
 
 #design {
-  animation: spin 1.5s linear infinite;
+  animation: spin 15s linear infinite;
 }
 
 #webdev {
-  animation: spin 0.8s linear infinite;
+  animation: spin 8s linear infinite;
 }
 
 .loader {
