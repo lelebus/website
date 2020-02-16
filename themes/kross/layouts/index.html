@@ -59,7 +59,7 @@
           <p class="font-secondary lead text-dark">{{.content | markdownify}}</p>
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .URL | absURL }}" class="btn btn-transparent">{{.label}}</a>
+          <a href="{{ .Site.BaseURL }}" class="btn btn-transparent">{{.label}}</a>
           {{ end }}
           {{ end }}
           {{ end }}

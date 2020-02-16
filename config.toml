@@ -12,6 +12,9 @@ URL = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 URL = "plugins/slick/slick.css"
 
+[[params.plugins.css]]
+URL = "plugins/themify-icons/themify-icons.css"
+
 
 # js plugin
 [[params.plugins.js]]
