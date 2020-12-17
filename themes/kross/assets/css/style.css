@@ -988,11 +988,11 @@ blockquote {
 }
 
 #softwaredev {
-  animation: spin 25s linear infinite;
+  animation: spin 15s linear infinite;
 }
 
 #design {
-  animation: spin 15s linear infinite;
+  animation: spin 25s linear infinite;
 }
 
 #webdev {
