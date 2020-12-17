@@ -25,11 +25,11 @@ skill:
       color : "#2B8CFF"
 
     - title : "SEO"
-      progress : "80%"
+      progress : "40%"
       color : "#FF9E2B"	
       
     - title : "Software Engineering"
-      progress : "70%"
+      progress : "80%"
       color : "#C7C7C7"
       
 
@@ -38,12 +38,12 @@ experience:
   enable : true
   title : "Experience"
   item: 
-    - logo : "images/experience/icon-1.png"
+    - logo : "images/experience/icon-2.png"
       id: "softwaredev"
       title : "Software Development"
-      description: "Management Software, <br> Enterprise Resoure Planner (ERP)"
+      description: "Custom Web-Apps, Custom Management Software, <br> Enterprise Resoure Planner (ERP)"
       
-    - logo : "images/experience/icon-2.png"
+    - logo : "images/experience/icon-1.png"
       id: "design"
       title : "Design"
       description: "Business Cards, Web Design"
